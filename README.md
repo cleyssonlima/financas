@@ -6,3 +6,4 @@ Projeto criado no dojo sobre PL/PGSQL na Constat LM2.
 
 - [ ] Criar visão de gastos por categoria
 - [ ] dar suporte a cheque especial
+- [ ] diferenciar débito ou crédito
