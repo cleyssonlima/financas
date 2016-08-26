@@ -1,7 +1,9 @@
 all: default
 
 default:
-	psql -f functions/*.sql -f triggers/*.sql -f views/*.sql
+	find functions/ -type f -exec psql -f {} \;
+	find triggers/ -type f -exec psql -f {} \;
+	find views/ -type f -exec psql -f {} \;
 
 recreate:
 	psql -f install.sql
