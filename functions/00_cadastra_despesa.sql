@@ -24,8 +24,8 @@ BEGIN
 	IF NOT FOUND THEN
 		--RAISE EXCEPTION 'Fudeu! Não achei a categoria!';
 		RAISE WARNING 'Não achei a categoria, cadastrando nova.';
-		insert into categoria (nome) 
-			values (pcCategoria)
+		INSERT INTO categoria (nome) 
+			VALUES (pcCategoria)
 			RETURNING id into nCodigoCategoria;
 	END IF;
 
